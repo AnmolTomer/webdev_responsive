@@ -29,3 +29,5 @@ setInterval(() => {
 
 
 }, 4000)
+
+// End of section 1 slideshow change js code

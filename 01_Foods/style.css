@@ -9,6 +9,8 @@
     outline: none;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
+
+
 }
 
 /* End of common styles */
@@ -17,6 +19,18 @@
 html {
     font-size: 62.5%;
     /* 0.625*16 = 10, by default 1 rem is equal to 16 px, making it 62.5% = 10px */
+}
+
+.section-heading {
+    font-size: 12rem;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    /* Words capitalized using text-transform*/
+    text-transform: capitalize;
+    /* Space between letters using letter-spacing of 5 px, */
+    letter-spacing: .5rem;
+    text-shadow: .3 rem .3rem .3rem #000;
 }
 
 /* Section 1 */
@@ -35,17 +49,7 @@ html {
 }
 
 /* Customize the section heading Variety Of Foods */
-.section-heading {
-    font-size: 12rem;
-    font-weight: 900;
-    color: #fff;
-    text-align: center;
-    /* Words capitalized using text-transform*/
-    text-transform: capitalize;
-    /* Space between letters using letter-spacing of 5 px, */
-    letter-spacing: .5rem;
-    text-shadow: .3 rem .3rem .3rem #000;
-}
+
 
 /* Icons section .section-1-icons select class and i for i tag i.e. list item */
 .section-1-icons i {
@@ -68,3 +72,127 @@ html {
 }
 
 /* End of Section 1 - Title and Slideshow of Food Items */
+
+/* Section 2 - 3D Food Cards */
+
+
+.section-2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    /* Places element vertically by flex make it col wise using flex-direction */
+    display: flex;
+    flex-direction: column;
+    /* Create space between flex items */
+    justify-content: space-between;
+    /* Create space inside of section */
+    padding: 10rem 0;
+}
+
+.cards-container {
+    /* Place cards side by side in a row */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Customise the card */
+
+.card {
+    width: 30rem;
+    background-color: #a79a2d;
+    /* Create spacing inside the card */
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    /* Space between items */
+    justify-content: space-between;
+    /* Align items in center */
+    align-items: center;
+    box-shadow: 1rem 1rem 1rem #000;
+    /* Set position to relative to allow before element position as per its parent */
+    position: relative;
+    /* Rotate and skew the cards a bit */
+    transform: rotateY(20deg) skewX(-2deg);
+    /* For smoothness specify transform in transition */
+    transition: transform .5s, box-shadow 0.5s;
+
+}
+
+/* Hover effect */
+
+.card:hover {
+    /* transform with rotate and skew functions */
+    transform: rotateY(20deg) skewX(-2deg) translateY(-3rem);
+    box-shadow: 2rem 2rem 2rem #000;
+}
+
+/* Give card 3d effect using before and after */
+
+.card::before {
+    content: '';
+    height: 100%;
+    width: 1rem;
+    background-color: #817824;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    /* Transform property witk skew function */
+    transform: skewY(45deg);
+    /* By default on using transform element moves as per its center and origin of transformation is set to be center, but here we need to change it to right */
+    transform-origin: right;
+    box-shadow: -.1rem -.1rem .1rem #000;
+}
+
+.card::after {
+    content: '';
+    height: 1rem;
+    width: 100%;
+    background-color: #8f8317;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    /* Transform property witk skew function */
+    transform: skewX(45deg);
+    /* By default on using transform element moves as per its center and origin of transformation is set to be center, but here we need to change it to right */
+    transform-origin: bottom;
+    box-shadow: -.1rem -.1rem .1rem #000;
+}
+
+
+/* fix big images in cards issue */
+
+.card-img {
+    /* Takes 100% width of parent element that is card */
+    width: 100%;
+}
+
+/* Modify card name and button */
+.card-name {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #111;
+    margin: 2rem;
+    text-shadow: .15rem .15rem .15rem #000;
+}
+
+.card-btn {
+    width: 70%;
+    background-color: #111;
+    color: #888;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+    border: none;
+    /* .5 on top and bottom and 0 on left and right */
+    padding: .5rem 0;
+    cursor: pointer;
+    /* shadow on left side */
+    box-shadow: -0.2rem -0.2rem 0.2rem #000;
+}
+
+/* End of Section 2 - 3D Food Cards */
