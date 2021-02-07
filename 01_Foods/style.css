@@ -84,7 +84,17 @@
     color: .3s;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
 
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
 
 
 .navbar-link:hover {
@@ -116,6 +126,8 @@
     border-radius: 30rem 30rem 15rem 15rem;
     box-shadow: .1rem .1rem .1rem #000, -.1rem -.1rem .1rem #000;
     cursor: pointer;
+    /* assign zindex property to make sure ribbon doesn't stays on small screen */
+    z-index: 100;
     transition: top .4s .2s;
     /* won't be visible as placed behind navbar */
 }
@@ -541,3 +553,117 @@ html {
 }
 
 /* End of Section 4 - Footer */
+
+/* Responsive begins */
+
+/* Create media query and specify max width as 1400px */
+
+@media(max-width: 1400px) {
+    html {
+        font-size: 50%;
+    }
+
+    .section-2 {
+        height: auto;
+        padding: 10rem 0 12rem 0;
+    }
+
+    .cards-container {
+        margin-top: 10rem;
+    }
+
+    .gallery-link {
+        width: 40rem;
+        height: 25rem;
+        margin: 5rem;
+    }
+
+    .food-img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .section-heading {
+        font-size: 9rem;
+        margin: 0 5rem;
+    }
+
+    .section-1-icons {
+        font-size: 25rem;
+    }
+
+    .cards-container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 5rem;
+    }
+
+    .section-4 {
+        height: 30rem;
+        ;
+    }
+}
+
+
+@media(max-width: 900px) {
+    .navbar-link {
+        margin: 2rem;
+    }
+
+    .navbar-link i {
+        font-size: 4rem;
+    }
+
+    .navbar-link span {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .section-heading {
+        font-size: 7rem;
+        margin: 0 10rem;
+    }
+
+    .section-1-icons {
+        font-size: 20rem;
+    }
+
+    .menu {
+        left: 2rem;
+    }
+
+    .section-4 {
+        height: 40rem;
+        /* To place items on top of each other in a column*/
+        flex-direction: column;
+        /* Place flex items at top inside container */
+        justify-content: flex-start;
+        /* Center horizontally */
+        align-items: center;
+
+    }
+
+    .section-4-text {
+        margin-bottom: 8rem;
+    }
+}
+
+@media(max-width: 550px) {
+
+    /* Decrease font-size of html elements */
+    html {
+        font-size: 40%;
+    }
+
+    /* Decrease space between navbar items */
+    .navbar-link {
+        margin: 0 .7rem;
+    }
+}
+
+/* Responsive ends */
