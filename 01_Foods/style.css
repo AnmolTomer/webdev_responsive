@@ -196,3 +196,140 @@ html {
 }
 
 /* End of Section 2 - 3D Food Cards */
+
+/* Section 3 - Gallery */
+.section-3 {
+    background-color: #333;
+    /* Space at top and bottom */
+    padding: 5rem 0;
+}
+
+.gallery {
+    /* 6 items in 2 rows of 3 */
+    display: flex;
+    /* To display images in rows use flex-wrap */
+    flex-wrap: wrap;
+    /* Place in center with space between them */
+    align-items: center;
+    justify-content: space-evenly;
+    /* To create space between heading and gallery */
+    margin-top: 10rem;
+}
+
+/* Take care of image size in gallery */
+.food-img {
+    /* 24% of viewable width is width and 15% of viewable height*/
+    width: 24vw;
+    height: 15vw;
+    /*Maintains quality of the image without stretching it.*/
+    object-fit: cover;
+    /* For multiple lines outside image use boxshadow with multiple values*/
+    box-shadow: .3rem .3rem .1rem #e92929, .5rem .5rem .5rem #a2e946, .7rem .7rem .1rem #297ce9, .9rem .9rem .1rem #e92999;
+    transition: all .5s;
+}
+
+.gallery-link {
+    position: relative;
+    margin: 4rem 1rem;
+}
+
+/* Change shadow of image on hover */
+.gallery-link:hover .food-img {
+    box-shadow: 1rem 1rem .1rem #e92929, 2rem 2rem .5rem #a2e946, 3rem 3rem .1rem #297ce9, 4rem 4rem .1rem #e92999;
+    /* filter property with blur function to make image blurry */
+    filter: blur(0.5rem);
+    opacity: 0.5;
+    /* Increase scaling of image on hover */
+    transform: scale(1.1);
+}
+
+/* Set height to 0 for vertical line */
+.gallery-link::before {
+    content: "";
+    position: absolute;
+    top: 2vw;
+    left: 80%;
+    width: .2rem;
+    height: 0;
+    background-color: #fff;
+    /* To make effect smooth use transition */
+    transition: height .5s;
+    /* To bring the vertical line to front on hover */
+    z-index: 10;
+}
+
+.gallery-link:hover::before {
+    height: 80%;
+}
+
+/* Set width to 0 for horizontal line */
+
+.gallery-link::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 2rem;
+    /* Set width to 0 */
+    width: 0;
+    height: 0.2rem;
+    background-color: #fff;
+    /* Transition for width with time of half seconds */
+    transition: width .5s;
+}
+
+.gallery-link:hover::after {
+    width: 90%;
+}
+
+
+/* Customise food names */
+
+/* For hover name and description should be hidden */
+.food-name {
+    /* Top left corner of image, set position of gallery-link as relative */
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #fff;
+    width: 0;
+    overflow: hidden;
+    /* To keep the name for some time */
+    transition: width .9s;
+}
+
+.gallery-link:hover .food-name {
+    width: 100%;
+    /* transition : time with delay of half seconds on hovering */
+    transition: width 1.5s .5s;
+}
+
+/* food description section properties */
+
+.food-description {
+    position: absolute;
+    bottom: 3vw;
+    left: 2rem;
+    width: 70%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.gallery-link:hover .food-description {
+    opacity: 1;
+    visibility: visible;
+    /* 1s transition with 1s delay */
+    transition: opacity 1s 1s;
+
+}
+
+/* End of Section 3 - Gallery */
