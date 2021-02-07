@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+/* End of common styles */
+
+/* 1 rem to 10 pixel instead of 16 px */
+html {
+    font-size: 62.5%;
+    /* 0.625*16 = 10, by default 1 rem is equal to 16 px, making it 62.5% = 10px */
+}
+
+/* Section 1 */
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    /* Place contents in center */
+    display: flex;
+    /*Places elements in horizontal need to do it in col wise*/
+    flex-direction: column;
+    /* Place elements in center horizontally */
+    align-items: center;
+    /* Add some space between contents */
+    justify-content: space-evenly;
+}
+
+/* Customize the section heading Variety Of Foods */
+.section-heading {
+    font-size: 12rem;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    /* Words capitalized using text-transform*/
+    text-transform: capitalize;
+    /* Space between letters using letter-spacing of 5 px, */
+    letter-spacing: .5rem;
+    text-shadow: .3 rem .3rem .3rem #000;
+}
+
+/* Icons section .section-1-icons select class and i for i tag i.e. list item */
+.section-1-icons i {
+    font-size: 35rem;
+    color: #a79a2d;
+    position: absolute;
+    /* Pass in x and y to translate function hide and display items using scale() function, scale(0) hides it*/
+    transform: translate(-50%, -50%) scale(0);
+    text-shadow: .2rem .2rem .2rem #000;
+    transition: transform .3s;
+}
+
+
+/* Apply class change to all icons that you want to display */
+.section-1-icons i.change {
+    /*set scale(1) also need to use translate otherwise icon position would become default  */
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform .3s;
+    /* Above displays the first icon with change class now we have to create a slide show and for that we use js */
+}
+
+/* End of Section 1 - Title and Slideshow of Food Items */
