@@ -15,6 +15,132 @@
 
 /* End of common styles */
 
+/* Navbar begins */
+
+.navbar {
+    width: 100%;
+    height: 14rem;
+    background-color: #000;
+    position: fixed;
+    /* -14rem to hide the navbar */
+    top: -14rem;
+    /* To avoid elements going on navbar */
+    z-index: 100;
+    /* Layout of navigation items fixed using flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .2rem .2rem .2rem #000;
+    transition: top 0.4s;
+}
+
+.navbar.change {
+    top: 0;
+    transition: top .4s .2s;
+}
+
+/* Customise link elements of navbar */
+.navbar-link {
+    color: #aaa;
+    margin: 0 4rem;
+    /* place icon and span element on top of each other using flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* transition to make effect smoother */
+    transition: color .3s, opacity .2s;
+}
+
+/* To change items on hover */
+
+.change .navbar-link {
+    opacity: 1;
+}
+
+.change .navbar-link:nth-child(1) {
+    transition: opacity .4s .5s;
+    color: .3s;
+}
+
+.change .navbar-link:nth-child(2) {
+    transition: opacity .4s .6s;
+    color: .3s;
+}
+
+.change .navbar-link:nth-child(3) {
+    transition: opacity .4s .7s;
+    color: .3s;
+}
+
+.change .navbar-link:nth-child(4) {
+    transition: opacity .4s .8s;
+    color: .3s;
+}
+
+.change .navbar-link:nth-child(5) {
+    transition: opacity .4s .9s;
+    color: .3s;
+}
+
+
+
+
+.navbar-link:hover {
+    color: #fff;
+}
+
+.navbar-link i {
+    font-size: 7rem;
+}
+
+.navbar-link span {
+    font-size: 2.5rem;
+    font-weight: 900rem;
+    letter-spacing: .5rem;
+    margin-top: .5rem;
+}
+
+/* Define width and height of menu icon */
+
+.menu {
+    width: 4rem;
+    height: 6rem;
+    background-color: #000;
+    position: fixed;
+    top: 1rem;
+    left: 5 rem;
+    margin-left: 4rem;
+    /* border-radius: first value of top left top right bottom right bottom left */
+    border-radius: 30rem 30rem 15rem 15rem;
+    box-shadow: .1rem .1rem .1rem #000, -.1rem -.1rem .1rem #000;
+    cursor: pointer;
+    transition: top .4s .2s;
+    /* won't be visible as placed behind navbar */
+}
+
+.menu.change {
+    /* ribbon moves up and down on each click. */
+    top: 15rem;
+    transition: top .4s;
+    /*Use transition in .menu to make the effect smoother*/
+}
+
+.menu::before {
+    content: "";
+    width: .3rem;
+    height: 15rem;
+    background-color: #000;
+    position: absolute;
+    top: -15rem;
+    left: calc(50%);
+    box-shadow: .1rem 0 .1rem #000;
+}
+
+/* Navbar ends */
+
+
 /* 1 rem to 10 pixel instead of 16 px */
 html {
     font-size: 62.5%;

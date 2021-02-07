@@ -1,3 +1,24 @@
+// Navbar dropdown 
+// Attach onClick event to menu icon
+
+document.querySelector('.menu').addEventListener('click', () => {
+    // call target class from navbar and menu using querySelectorAll method
+    document.querySelectorAll('.target').forEach((item) => {
+        // To add to both elements a new class using toggle method, use classList
+        item.classList.toggle('change')
+        // classList gives us all classes element has and allows us to access different methods in order to manipulate the classes of the element. Toggle method allows us to add class to element if it doesn't have it and remove class if the element has that class.
+    })
+
+    /* Above we add some new styles to both elements once we click the icon and then get rid of those
+    styles on next click. To do so, look throught the node list returned by querySelectorAll method
+    and add to each element a new class using toggle method, after that define new
+    styles using this class from CSS. So in order to look for the node list, we are
+    doing to use one of the array helper methods called forEach(), it takes one arg, callback function executes it on each item in node list.
+    */
+
+})
+
+
 // Selecting all the icons on homepage in .section-1-icons i.change section, we have to add class change and also some interval
 const icons = document.querySelectorAll('.section-1-icons i')
 
