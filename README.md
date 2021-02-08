@@ -4,7 +4,7 @@
 
 > **Sites Created**
 
-1. **Foods**: A website which is made to showcase different food items, this has a slideshow, 3D Cards, gallery with hover effects, followed by a footer and a animated navigation bar.
+1. **Foods**: A website which is made to showcase different food items, this has a slideshow, 3D Cards, gallery with hover effects, followed by a footer and a animated navigation bar. For demo [**Click Here**](https://foods-cosmic.netlify.app/)
 
 2. **Creative Design**: Here we use some modern and cool effects created using CSS tricks. Wave effects with floating background, navigation bar will have some hover effects, build user review cards with different effects in each card with a 3D postcard for contact section.
 
