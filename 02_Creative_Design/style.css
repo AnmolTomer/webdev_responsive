@@ -372,3 +372,107 @@ html {
 
 /* Create new class in css and define styles with this class which works while story-btn is pressed and add this class name to story and button itself and we will use toggle method in js to display and hid on alternate clicks */
 /* End of Section 3 */
+
+/* Section 4 */
+.section-4 {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    /* Create space around flex items */
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Customise form container */
+.form-container {
+    width: 80%;
+    height: 40%;
+    background-color: #e5e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: .3rem .3rem .4rem #ccc, -.1rem -.1rem, 4rem #ccc;
+    border-radius: .5rem;
+    /* Perspective defines how far element is from user. */
+    perspective: 100rem;
+}
+
+
+.form-img {
+    width: 55rem;
+    background-color: rgba(50, 231, 255, 0.8);
+    padding: 5rem;
+    opacity: .8;
+    box-shadow: -3rem 3rem 4rem #aaa;
+    border-radius: .5rem;
+    transform: rotateY(20deg);
+    transition: all .5s;
+}
+
+.form-img:hover {
+    transform: translateY(-2rem) rotateY(20deg);
+    box-shadow: -5rem 5rem 7rem #aaa;
+}
+
+.contact-form {
+    width: 45rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: .5rem;
+    box-shadow: 3rem 3rem 4rem #aaa;
+    transform: rotateY(-20deg);
+    transition: all .5s;
+}
+
+.contact-form:hover {
+    transform: translateY(-2rem) rotateY(-20deg);
+    box-shadow: 5rem 5rem 7rem #aaa;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: inset .1rem .1rem .2rem #ddd, inset -.1rem -.1rem .2rem #ddd;
+}
+
+.contact-form textarea {
+    max-height: 15rem;
+    min-height: 10rem;
+    max-width: 100%;
+    min-width: 70%;
+}
+
+.contact-form input[type="submit"] {
+    background-color: rgba(50, 231, 255, 0.8);
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: .5rem;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+
+.contact-form input[type="submit"]:hover {
+    background-color: #32e7ff;
+}
+
+.copyright {
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    color: #444;
+    margin-top: 5rem;
+}
+
+/* To have 3D effects we need to assign perspective to parent */
+
+/* Section 4 Ends */
+
+/* Scroll Up */
