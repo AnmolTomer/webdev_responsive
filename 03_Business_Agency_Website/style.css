@@ -21,6 +21,111 @@ html {
 /* End of Common Styles */
 
 /* Navbar begins */
+.navbar {
+    width: 100%;
+    /* Make height as 100 viewport height and later on click we will change it to visible or hidden */
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Navbar will have fixed position at the top of the page*/
+    position: fixed;
+    top: 0;
+    /* Navbar hidden as it gets behind banner, change z index */
+    z-index: 2;
+    /* Space inside navbar using padding 3rem on all 4 sides */
+    padding: 3rem;
+}
+
+/* logo section */
+.logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 4rem;
+    /* Style the logo */
+}
+
+.logo a {
+    font-family: 'MADESoulmaze', sans-serif;
+    font-size: 2.5rem;
+    color: #eee;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.logo span {
+    font-family: 'MADESoulmaze', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #9e0e09;
+}
+
+/* Hide nav elements to work properly on menu icons*/
+.nav-list {
+    /* display: none; */
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link {
+    font-family: "MADESoulmaze", "Baloo Da 2", sans-serif;
+    font-size: 4rem;
+    letter-spacing: .3rem;
+    color: #fff;
+    margin: 2rem 0;
+    font-weight: bold;
+    transition: color .4s;
+}
+
+.nav-link:hover {
+    color: #9e0e09;
+}
+
+/* Customise menu icons */
+.menu {
+    width: 4rem;
+    height: 4rem;
+    /* Temp background just used to see where on title bar icon is coming and placing it at right using background-color; */
+    /* background-color: #eee; */
+    /* Ends up behind navbar so set position and use z-index */
+    position: fixed;
+    z-index: 4;
+    /* place at top right */
+    top: 2rem;
+    right: 4rem;
+    /* Lines are visible but on top of each other, create space and separate them using flexbox */
+    display: flex;
+    /* Display lines vertically using flex-direction: column; */
+    flex-direction: column;
+    /* To have space between elements */
+    justify-content: space-evenly;
+    /* Change cursor on hover */
+    cursor: pointer;
+}
+
+/* Select line to make icon */
+.line {
+    width: 100%;
+    height: .2rem;
+    background-color: #eee;
+}
+
+/* Change size of line-1 as it is smaller */
+.line-1 {
+    width: 50%;
+}
+
+.line-3 {
+    width: 50%;
+    margin-left: auto;
+    /*To place line on right*/
+}
+
 /* Navbar ends */
 
 /* Section 1 */
