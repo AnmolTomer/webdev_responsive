@@ -1,0 +1,255 @@
+/* Common Styles */
+
+/* Select every element using * and get rid of default margin and padding */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Baloo Da 2", cursive;
+}
+
+/* Throughout the project we use rem as measurement, by default 1 rem = 16px so we scale it down to 62.5% to make 1 rem = 10px. */
+
+html {
+    font-size: 62.5%;
+}
+
+/* End of Common Styles */
+
+/* Navbar begins */
+/* Navbar ends */
+
+/* Section 1 */
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background: url(images/dark-bg.jpeg)no-repeat;
+    /* To set image as full screen */
+    background-size: cover;
+    position: relative;
+}
+
+/* Banner position in center and width*/
+
+.banner {
+    width: 100%;
+    /* To position it as per its parent make parent positioning relative */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    /* For perfect centering move element to left by 50% */
+    transform: translateX(-50%);
+    /* Align text in center */
+    text-align: center;
+    /* Banner is centered now customize each element */
+    /* Hide scroll bar */
+    overflow: hidden;
+}
+
+/* CSS Animations using keyframe @keyframes animationName */
+
+@keyframes animatedHeading {
+
+    /* 0% hidden */
+    0% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 3rem;
+    }
+
+    /* At 3% we make element visible */
+    3% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: 1.5rem;
+    }
+
+    /* 3 - 25% heading will be visible 25% to 28% it will hide again */
+    25% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: 1.5rem;
+    }
+
+    /* Hidden at 28% */
+    28% {
+        transform: translateZ(8);
+        opacity: 0;
+        letter-spacing: 3rem;
+    }
+
+    /* 28% to 100% heading will be hidden */
+    100% {
+        transform: translateZ(8);
+        opacity: 0;
+        letter-spacing: 3rem;
+    }
+
+    /* We will add the above cycle to all the headings but with different delay times therefore they will display and hide in order again.*/
+}
+
+/* Select all the headings separately and assign animation properties to them */
+
+.heading-1 {
+    /* animation: nameOfAnimation Duration Delay infinite*/
+    animation: animatedHeading 12s 3s infinite;
+}
+
+.heading-2 {
+    /* animation: nameOfAnimation Duration Delay infinite*/
+    animation: animatedHeading 12s 6s infinite;
+}
+
+.heading-3 {
+    /* animation: nameOfAnimation Duration Delay infinite*/
+    animation: animatedHeading 12s 9s infinite;
+}
+
+.heading-4 {
+    /* animation: nameOfAnimation Duration Delay infinite*/
+    animation: animatedHeading 12s 12s infinite;
+}
+
+/* Customise banner-heading */
+
+.banner-heading {
+    /* Space at the bottom of heading */
+    margin-bottom: 4rem;
+    /* Height of heading */
+    height: 20rem;
+
+    /* Create a 3D env use property perspective it shows how far away the element is from the user and we assign it to .beanner-heading element. */
+    perspective: 50rem;
+}
+
+/* Select span element of .banner-heading */
+.banner-heading span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12rem;
+    font-weight: 400;
+    /* More styles to span element - uppercase, color as white and text-shadow of black color and 0.5 opacity */
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: .3rem .3rem .6rem rgba(0, 0, 0, 0.5);
+    /* To place elements on top of each other use position absolute */
+    position: absolute;
+    /* Use flexbox to display banner headin in center */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    /* Headings are positioned in center, next we need to work on css animations to view and hide the elements.
+    We will move headings closer to the user with the translate function in 3D environment.
+    We will hide the elements and we will display headings in order with intervals.
+    */
+    /* Let's move the headings and hide them */
+    transform: translateZ(8rem);
+    /* To hide make opacity 0 */
+    opacity: 0;
+    /* Increase letter spacing to make the effect look better */
+    letter-spacing: 3rem;
+    /* Horizontal scrollbar will be visible and to hide it in .banner-heading make overflow: as hidden */
+}
+
+/* .banner-paragraph customization */
+
+.banner-paragraph {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 30%;
+    /* Margin: top left bottom right 🔝 ⬅ 🔽 ▶ */
+    margin: 0 auto 4rem auto;
+    /* Create space at the top and bottom inside the para using padding */
+    padding: 1rem 0;
+    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
+    /* Hide para by default so that animation gets to display it */
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeAnimation 1s 1.5s forwards;
+    /* Forwards used so that the element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count) */
+}
+
+/* Animations for paragraph */
+
+/* Create CSS Keyframes for paragraph and button*/
+@keyframes fadeAnimation {
+
+    /* Hide element at 0% of the effect */
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Make element visible at 100% of the effect */
+}
+
+/*Add fadeAnimation using animation property to .banner-paragraph */
+
+/* End of Animations for paragraph */
+
+/* banner-button */
+.banner-btn {
+    width: 30rem;
+    height: 6rem;
+    background: linear-gradient(to right, #9b0e0e, #7a1010);
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: .1rem solid #800505;
+
+    /* Shadow effects for button and text */
+    box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.5);
+    text-shadow: .6rem .3rem .2rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    /* Hide button by default so that animation loads it. */
+    opacity: 0;
+    visibility: hidden;
+    /* Assign animation to button */
+    animation: fadeAnimation 1s 2s forwards;
+    /* To assign position as per parent element define position as relative */
+    position: relative;
+    /* To hide the white stripe by default */
+    overflow: hidden;
+}
+
+
+/* Before psuedo element to create shining hover effect */
+
+.banner-btn:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* Direction of transition from left to right 
+    background: linear-gradient(direction, color1,color2, color3)
+    */
+
+    background: linear-gradient(to right, transparent, #fff, transparent);
+    /* Define position to make the element visible */
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* Skew horizontally using transform property */
+    transform: skewX(-30deg);
+    transition: left 0.5s;
+}
+
+.banner-btn:hover::before {
+    left: 100%;
+}
+
+
+
+/* End of Section 1 */
