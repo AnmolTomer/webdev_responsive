@@ -31,3 +31,13 @@
 ## 5. Make the navbar work onClick()
 
 - Once we click the icon, the navbar should expand to the entire page and the navigation items should be displayed.
+
+## 6. Create and Style About Us Section
+
+- Work on adding div for video buttons, bar, player etc.
+
+## 7. Make Custom Video Controls
+
+- Use `video.play()`, `video.pause()` and based on duration to change the progress bar shown.
+
+- Use `video.ended()` to reset the opacity of video and change the button to play from pause.

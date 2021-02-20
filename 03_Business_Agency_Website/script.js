@@ -19,3 +19,44 @@ Use classList properties to add new class to the element, it gives us list of al
 
 
 // Navbar Ends
+
+// Section 2 Video
+const video = document.querySelector('.video')
+const btn = document.querySelector('.buttons i')
+const bar = document.querySelector('.video-bar')
+
+const playPause = () => {
+    // Check paused() method to see if video is paused or not.
+
+    if (video.paused) {
+        video.play()
+        btn.className = 'far fa-pause-circle'
+        video.style.opacity = '0.9'
+    } else {
+        btn.className = 'far fa-play-circle'
+        video.pause()
+        video.style.opacity = '0.3'
+    }
+
+    // built in methods to play video
+
+}
+
+// Attach event listener with click event
+
+btn.addEventListener('click', () => {
+    playPause()
+})
+
+video.addEventListener('timeupdate', () => {
+    // console.log(video.currentTime, video.duration)
+    const barWidth = video.currentTime / video.duration
+    bar.style.width = `${barWidth*100}%`
+
+    if (video.ended) {
+        btn.className = 'far fa-play-circle'
+        video.style.opacity = 0.3;
+        bar.style.width = `0%`
+    }
+})
+// Section 2 Video Ends
