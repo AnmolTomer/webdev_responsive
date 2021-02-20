@@ -27,3 +27,7 @@
 ## 4. Navbar and Logo
 
 - Create a expand on clicking navbar, with hover effect and transform hamburger to arrow.
+
+## 5. Make the navbar work onClick()
+
+- Once we click the icon, the navbar should expand to the entire page and the navigation items should be displayed.
