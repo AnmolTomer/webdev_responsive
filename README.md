@@ -6,9 +6,9 @@
 
 1. **Foods**: A website which is made to showcase different food items, this has a slideshow, 3D Cards, gallery with hover effects, followed by a footer and a animated navigation bar. For demo [**Click Here**](https://foods-cosmic.netlify.app/)
 
-2. **Creative Design**: Here we use some modern and cool effects created using CSS tricks. Wave effects with floating background, navigation bar will have some hover effects, build user review cards with different effects in each card with a 3D postcard for contact section. For Demo [**Click Here**](https://design-cosmic.netlify.app/)
+2. **Creative Design**: Here we use some modern and cool effects created using CSS tricks. Wave effects with floating background, navigation bar will have some hover effects, build user review cards with different effects in each card with a 3D postcard for contact section. 
 
-3. **Personal Portfolio Site**: A good landing page, progress bars to show skill level, gallery of projects with hover effects and contact section with footer along with a fixed navigation and smooth scroll ability.
+3. **Personal Portfolio Site**: A good landing page, progress bars to show skill level, gallery of projects with hover effects and contact section with footer along with a fixed navigation and smooth scroll ability. For Demo [**Click Here**](https://agency-cosmic.netlify.app/)
 
 4. **Classic Cars**: Project based on classic cars, it will be a different kind of website, we will have here landing section, followed by cars on a postcard format, video gallery for vintage muscle cars and image gallery where we create 3D elements using CSS, and a contact form at the end. Also, navigation bar with all the contents of the site getting tilted on clicking nav bar.
 
