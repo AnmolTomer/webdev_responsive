@@ -71,3 +71,5 @@
 - To each pricing-card assign `swiper-slide`.
 
 - Make height and width of `.pricing-card` as !important and then grab js from GitHub code and paste it in script.js.
+
+---
