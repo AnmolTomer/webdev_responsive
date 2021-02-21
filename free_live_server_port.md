@@ -1,0 +1,2 @@
+- Get the process ID that is on port 5500 `Get-Process -Id (Get-NetTCPConnection -LocalPort 5500).OwningProcess`
+- Kill the task say it hasi 8372 ID: `taskkill /F /PID 8372`
