@@ -25,6 +25,8 @@ const video = document.querySelector('.video')
 const btn = document.querySelector('.buttons i')
 const bar = document.querySelector('.video-bar')
 
+const sendMsg = document.querySelectorAll("input[type=submit]")[0]
+
 const playPause = () => {
     // Check paused() method to see if video is paused or not.
 
@@ -60,3 +62,32 @@ video.addEventListener('timeupdate', () => {
     }
 })
 // Section 2 Video Ends
+
+// Section 3 - Pricing Slider js
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 70,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    }
+});
+// End of Section 3 - Pricing Slider js
+
+//  Section 4 - addEventListener for local data time on pressing Send Message
+
+sendMsg.addEventListener('click', () => {
+    var now = new Date()
+    console.log("Submit message clicked on " + now.toLocaleDateString() + " " + now.toLocaleTimeString())
+    alert("No DB Connected so only logging to console.")
+
+
+
+})
+
+// End of Section 4
