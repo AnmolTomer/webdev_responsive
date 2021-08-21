@@ -39,3 +39,21 @@
 - Next as we want to place the items vertically in column, we have to change flex-direction in section-1-banner. After that we go on to modify section elements such as heading, span, button and others.
 
 - We want to change button shape on hover to an arrow pointing towards left the iPhone box, to do so we will use clip-path property with specific shape values and we will apply those.
+
+---
+
+## 02. Create Background Images Slideshow
+
+- Most of the slideshow functionality will be created using JS and in HTML document we will create a single div element that will represent the slideshow.
+
+- Create 5 div elements and we will define bg-image for each div element, we could do this using HTML and CSS but this is more convenient and dynamic in JS. We use for loop to iterate and create 5 div elements inside slideshow div. We call the function in script.js.
+
+- Then we specify CSS properties for slideshow class and then we have to specify width and height of `.slideshow div` elements. We have to place the images on top of each other and for that we do `position:absolute` and then we use background-size and bg-position as well as repeat property.
+
+- We use z-index property to not have content behind the webpage for that we set z-index:-1. We define a new class with opacity 1 and we will add this class using js.
+
+- In JS we select all the divs using document.querySelectorAll() and we create a new function that uses setInterval method to execute a function over and over again using a specified time period in ms.
+
+- We remove the change div in setInterval function and using nextElementSibling.classList we add change div to it.
+
+- To crate fade effect we specify transition to opacity with duration of 1s.
