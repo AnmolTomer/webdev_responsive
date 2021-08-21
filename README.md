@@ -12,7 +12,7 @@
 
 4. **Personal Portfolio Site**: A good landing page, progress bars to show skill level, gallery of projects with hover effects and contact section with footer along with a fixed navigation and smooth scroll ability.
 
-5. **Classic Cars**: Project based on classic cars, it will be a different kind of website, we will have here landing section, followed by cars on a postcard format, video gallery for vintage muscle cars and image gallery where we create 3D elements using CSS, and a contact form at the end. Also, navigation bar with all the contents of the site getting tilted on clicking nav bar.
+5. **Classic Cars**: Project based on classic cars, it will be a different kind of website, we will have here landing section, followed by cars on a postcard format, video gallery for vintage muscle cars and image gallery where we create `3D elements using CSS`, and a contact form at the end. Also, navigation bar with all the contents of the site getting tilted on clicking nav bar.
 
 6. **Architecture and Interior Design**: Focuses on animations, includes a spinner. Used CSS layout modules called access grid to create `About Us` section. Uses `field.js` to create Our Team Section, along with contact section in sync with the site theme along with navbar with effects.
 
@@ -24,6 +24,6 @@
 
 10. **Landing Page for E-Learning Agency**: Landing page includes CSS animations, nav bar, about us section with videos, pricing cards which uses slider.js followed by Contact card and footer.
 
-11. **Clone of PayPal Landing Page**: UI of the website created along with login and sign up.
+11. **Clone of PayPal Landing Page**: UI of the website created along with login and sign up page.
 
 - All the sites will be responsive, so a lot will be learnt about CSS Media Queries.
