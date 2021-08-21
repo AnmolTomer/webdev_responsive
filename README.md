@@ -10,17 +10,17 @@
 
 3. **Business Agency Website**: Landing Page with overlay as navigation bar. Embedded video player in About Us section with custom play button. Pricing shown using cards. Contact form along with footer. For Demo [**Click Here**](https://agency-cosmic.netlify.app/)
 
-4. **Personal Portfolio Site**: A good landing page, progress bars to show skill level, gallery of projects with hover effects and contact section with footer along with a fixed navigation and smooth scroll ability.
+4. **Apple Product Landing Page**: Have a 3D box of iPhone with controls, section about iPhone 12 with hover effects, section for MacBook Air with an animated MacBook on screen, created using CSS and JS. Section about apple iWatches where you can choose your favourite cases and bands. Section for `AirPods` followed by footer.
 
-5. **Classic Cars**: Project based on classic cars, it will be a different kind of website, we will have here landing section, followed by cars on a postcard format, video gallery for vintage muscle cars and image gallery where we create `3D elements using CSS`, and a contact form at the end. Also, navigation bar with all the contents of the site getting tilted on clicking nav bar.
+5. **Personal Portfolio Site**: A good landing page, progress bars to show skill level, gallery of projects with hover effects and contact section with footer along with a fixed navigation and smooth scroll ability.
 
-6. **Architecture and Interior Design**: Focuses on animations, includes a spinner. Used CSS layout modules called access grid to create `About Us` section. Uses `field.js` to create Our Team Section, along with contact section in sync with the site theme along with navbar with effects.
+6. **Classic Cars**: Project based on classic cars, it will be a different kind of website, we will have here landing section, followed by cars on a postcard format, video gallery for vintage muscle cars and image gallery where we create `3D elements using CSS`, and a contact form at the end. Also, navigation bar with all the contents of the site getting tilted on clicking nav bar.
 
-7. **The Roads**: Website for bloggers and travellers, includes 3D effects, animated logo, navbar along with cards about various locations and their prices, review section as well as animated/video background sections with contact form.
+7. **Architecture and Interior Design**: Focuses on animations, includes a spinner. Used CSS layout modules called access grid to create `About Us` section. Uses `field.js` to create Our Team Section, along with contact section in sync with the site theme along with navbar with effects.
 
-8. **Wine House**: Implemented horizontal scroll across 5 pages, fixed nav bar with hover effects and effects for navigation.
+8. **The Roads**: Website for bloggers and travellers, includes 3D effects, animated logo, navbar along with cards about various locations and their prices, review section as well as animated/video background sections with contact form.
 
-9. **Apple Product Landing Page**: Have a 3D box of iPhone with controls, section about iPhone 12 with hover effects, section for MacBook Air with an animated MacBook on screen, created using CSS and JS. Section about apple iWatches where you can choose your favourite cases and bands. Section for `AirPods` followed by footer.
+9. **Wine House**: Implemented horizontal scroll across 5 pages, fixed nav bar with hover effects and effects for navigation.
 
 10. **Landing Page for E-Learning Agency**: Landing page includes CSS animations, nav bar, about us section with videos, pricing cards which uses slider.js followed by Contact card and footer.
 
