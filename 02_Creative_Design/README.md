@@ -1,5 +1,7 @@
 # [✨✨ Creative Design Website](https://design-cosmic.netlify.app/)
 
+![](https://i.imgur.com/Ewn0iUZ.png)
+
 - Project has lots to learn about special effects, following are the sections:
 
 1. 4 different navigation items on landing page with a fluid background like waves and logo.
