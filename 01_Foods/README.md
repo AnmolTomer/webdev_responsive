@@ -1,5 +1,7 @@
 # ✨✨ FOODS WEBSITE
 
+![](https://i.imgur.com/AVTn6s8.png)
+
 - Project is like a website for someone selling different kind of foods. It comprises of following sections:
 
 1. **Slideshow**: Consists of different font-awesome food icons.
@@ -10,6 +12,6 @@
 
 4. **Simple Footer**: Made with some text elements and input field with button.
 
-5. **Navbar**: Has fade effects
+5. **Navbar**: Has fade effects.
 
 - Built with desktop first approach, and then we will make it responsive to different screen sizes.
