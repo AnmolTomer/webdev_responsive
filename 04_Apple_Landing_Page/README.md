@@ -57,3 +57,19 @@
 - We remove the change div in setInterval function and using nextElementSibling.classList we add change div to it.
 
 - To crate fade effect we specify transition to opacity with duration of 1s.
+
+## 03. Create And Customize Phone Box
+
+- Requirements: 3D Cuboid, Image of iPhone on front, iPhone written on the sides, logo at the back, controllers to change cube direction. Created using JS and CSS.
+
+- Create `cube-wrapper` div after navbar, create another sub-div named cube and this will contain sub-div for `front-side`.
+
+- Write CSS for cube with properties such as width, height. Create a .front-side container with some padding to keep space for cube boundaries, .front-side img selector will be used to fit the image using `object-fit:contain`.
+
+- Create 3D environment in order to see how the cube is going to be built. To create a 3D environment we have to use one of the properties called perspective and we have to assign it to the cube wrapper. Defines how far the element is away from the user.
+
+- Move the front side in a 3D environment and for that we need 3D space, we use transform-style with preserve-3d, this will allow sharing 3D environment with child elements.
+
+- Rotate the cube if you want to see from other direction. Most of the properties will be same for front-side and back-side and next we place the apple icon on the center.
+
+- Used a lot of psuedo-elements `::before` and `::after`, translateZ and box-shadow used to create 3D box.

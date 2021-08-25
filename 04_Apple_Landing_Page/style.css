@@ -72,6 +72,7 @@ html{
 
 .navbar-link:hover{
     transform: scale(1.5);
+    text-decoration:solid;
 }
 /* End of Navbar */
 
@@ -119,6 +120,112 @@ html{
     75% 85%, 40% 85%, 30% 100%, 0 50%, 0 50%, 30% 0);
 }
 /* End of Banner */
+
+/* Cube */
+
+.cube{
+    width: 30rem;
+    height: 55rem;
+    
+    transform-style: preserve-3d;
+    transform: rotateY(-25deg);
+    transform: rotateX(25deg)
+}
+
+.cube-wrapper{
+    perspective: 100rem;
+}
+
+.back-side i{
+    font-size: 12rem;
+    color: var(--primary-color);
+    text-shadow: 0.1rem 0.1rem 0.2rem #aaa, -0.1rem -0.1rem 0.2rem #aaa;
+    transform: rotateY(180deg);
+}
+
+.front-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   
+}
+
+.front-side,
+.back-side{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fee;
+    transform-style: preserve-3d;
+    box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd,
+    inset 0.1rem 0.1rem 0.1rem #ddd;
+}
+
+.front-side{
+    padding: 2.5rem;
+    transform: translateZ(5rem);
+}
+
+.back-side{
+    transform: translateZ(-5rem)
+}
+
+.back-side::before,
+.back-side::after{
+    content: 'iPhone';
+    width: 10rem;
+    height:100%;
+    background-color: #fee;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 300;
+    color:#ec1919;
+    box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd,
+    inset 0.1rem 0.1rem 0.1rem #ddd;
+}
+
+.back-side::before{
+    top:0;
+    left:0;
+    transform:rotateY(-90deg);
+    transform-origin: left;
+}
+
+.back-side::after{
+    right:0;
+    top:0;
+    transform:rotateY(90deg);
+    transform-origin: right;
+}
+
+.front-side::before,
+.front-side::after{
+    content: '';
+    width: 100%;
+    height: 10rem;
+    background-color:#fee;
+    position:absolute;
+    box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd,
+    inset 0.1rem 0.1rem 0.1rem #ddd;
+}
+
+.front-side::before{
+    top:0;
+    left:0;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}
+
+.front-side::after{
+    bottom:0;
+    left:0;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+
+/* End of Cube */
 
 /* Slideshow */
 .slideshow{
